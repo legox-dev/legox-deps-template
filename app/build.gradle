@@ -1,11 +1,11 @@
 import legox.deps.AndroidX
 import legox.deps.Kt
+import legox.deps.Retrofit
 import legox.deps.Tools
 
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'legox.deps'
 }
 
 android {
@@ -44,6 +44,7 @@ dependencies {
     implementation AndroidX.appcompat
     implementation AndroidX.design
     implementation AndroidX.constraintLayout
+    implementation Retrofit.runtime
     testImplementation Tools.junit
     androidTestImplementation Tools.androidTestJunit
     androidTestImplementation Tools.espressoCore
